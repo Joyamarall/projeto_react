@@ -15,9 +15,6 @@ function dark() {
   }
 }
 
-
-
-
 function Menu(){
 
   useEffect(() => {
@@ -41,10 +38,9 @@ function Menu(){
               </ul>
           </nav>
         </div>
-        <div id="switch" onclick={dark}>
-          <button></button>
-          <span></span>
-        </div>
+        <button id= "switch" className="btndark" alt="" onClick={dark}>
+          MODO ESCURO
+        </button>
         </div>
           </> );
         }

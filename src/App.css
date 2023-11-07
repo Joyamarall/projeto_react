@@ -14,7 +14,6 @@
   --color-background-card: #fff;
   --color-gradient: #0c0c0c;
   --color-icon: #073fcc;
- --switch-bg-url: url(./img/sun.svg);  
 
   --color-white: #fff;
   --color-pink: #d12f7a;
@@ -23,7 +22,7 @@
  
 }
 
-.theme-light {
+.darkMode {
   --color-text: #0c0c0c;
   --color-background: #fff;
   --color-tarja: #0c0c0c;
@@ -32,7 +31,6 @@
   --color-background-card: #0c0c0;
   --color-gradient: #fff;
   --color-icon: #fff;
- --switch-bg-url: url(./img/moon-star.svg);
   
 
   --color-white: #fff;
@@ -105,38 +103,24 @@ nav ul a{
 
 /*Botão dark*/
 #switch {
-  position: relative;
-  width: 64px;
-  margin: 4px auto;
-}
-#switch button {
-  width: 32px;
-  height: 32px;
-  background: white var(--switch-bg-url) no-repeat center;
-  border: 2px solid black;
-  border-radius: 50%;
-
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative; 
+  margin-top: 10px;
 }
 
-.light #switch button {
-  right: 0;
-  left: initial;
-}
-
-#switch span {
-  display: block;
-  width: 64px;
-  height: 24px;
+.btndark{
+  background-color: var(--color-text-tarja);
+  color: var(--color-text);
+  font-size: 12px;
+  font-weight:700;
+  padding: 8px 20px;
   border: 2px solid var(--color-card);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 9999px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
 }
+
+
+
 /*fim botão dark*/
 
 #person {
