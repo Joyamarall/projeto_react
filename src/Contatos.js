@@ -2,7 +2,7 @@ import React from "react";
 
 function Contatos (){
     return(
-        <section>
+        <section id="contacts" >
         <div className="contact-icon-content">
         <h2>Contato 📞</h2>
       </div>
@@ -12,19 +12,14 @@ function Contatos (){
             <i className="fa fa-map-marker" aria-hidden="true"></i>
           </div>
           <div className="contact-info">
-            <span>Localização</span>
+            <span>📍 Localização</span>
             <p>Pernambuco, Brasil</p>
           </div>
         </div>
-        <div className="contact-icon-content">
-          <div className="contact-icon">
-            <i className="fa fa-envelope" aria-hidden="true"></i>
-          </div>
           <div className="contact-info">
-            <span>E-mail</span>
+            <span>✉️ E-mail</span>
             <a href="/"> joylta97@outlook.com </a>
           </div>
-        </div>
       </div>
     </section>
     )

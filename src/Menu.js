@@ -1,8 +1,33 @@
-import React from "react";
+import React, {useEffect} from "react";
+
+function dark() {
+  const darkmode = document.body;
+
+
+  darkmode.classList.toggle('darkMode');
+
+  if (darkmode.classList.contains('darkMode')) {
+
+    localStorage.setItem('tema', 'dark');
+  } else {
+
+    localStorage.setItem('tema', 'light');
+  }
+}
+
 
 
 
 function Menu(){
+
+  useEffect(() => {
+    const temaAtual = localStorage.getItem('tema');
+    if (temaAtual === 'dark') {
+      document.body.classList.add('darkMode');
+    } else {
+      document.body.classList.remove('darkMode');
+    }
+  }, []);
 
     return(<>
         <div id="menu">
@@ -15,6 +40,10 @@ function Menu(){
                 <li> <a className= "btn1" href="#contacts" > Contato </a> </li> 
               </ul>
           </nav>
+        </div>
+        <div id="switch" onclick={dark}>
+          <button></button>
+          <span></span>
         </div>
         </div>
           </> );

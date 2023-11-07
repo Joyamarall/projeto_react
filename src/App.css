@@ -622,7 +622,7 @@ nav ul a{
   margin: 3rem 3rem 3rem 0rem;
   padding: 1rem 1rem 1rem 0rem;
   font-size: 3rem;
-  color: var(--color-text-tarja);
+  color: var(--color-text);
 }
 
 .contact-icons-wrapper {
@@ -648,18 +648,12 @@ nav ul a{
   align-items: center;
 
   margin-right: 2rem;
-  background: var(--color-card);
   padding: 1rem;
   border-radius: 50%;
 }
 
-.contact-icon i {
-  font-size: 2rem;
-  color: var(--color-icon);
-}
-
 .contact-info span {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 
@@ -671,7 +665,7 @@ nav ul a{
   display: block;
   margin: 0.25rem 0rem;
   text-decoration: none;
-  color: var(--color-text-tarja);
+  color: var(--color-text);
 }
 
 .contact-info a:hover {
